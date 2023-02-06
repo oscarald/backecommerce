@@ -43,6 +43,7 @@ const verifyUser = async (req, res) => {
         id: user._id,
         name: user.name,
         email: user.email,
+        isAdmin: user.isadmin,
         token: generateJWT(user._id),
       });
     return res.status(404).send({ error: "Contraseña incorrecta" });
