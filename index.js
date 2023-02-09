@@ -3,9 +3,10 @@ import createUser from "./data/userData.js";
 import createProducts from "./data/productData.js";
 import createCategory from "./data/categoryData.js";
 
+createCategory();
+
 createUser();
 createProducts();
-createCategory();
 
 const port =  parseInt(process.env.PORT) || 3001;
 
