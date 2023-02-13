@@ -6,14 +6,20 @@ import {
   orderProductsbyPrice,
   orderProductsbyDate,
   orderProductsbyBetweenPrice,
-  searchProducts
+  searchProducts,
+  allProducts,
+  updateProduct,
+  newProduct
 } from "../controllers/productController.js";
 
 router.get("/", getProducts);
+router.post("/", newProduct);
+router.put("/", updateProduct);
 router.get("/rate", orderProducts);
 router.get("/price", orderProductsbyPrice);
 router.get("/date", orderProductsbyDate);
 router.get("/between", orderProductsbyBetweenPrice);
 router.get("/search", searchProducts);
+router.get("/all", allProducts);
 
 export default router;

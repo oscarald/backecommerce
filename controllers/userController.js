@@ -8,6 +8,7 @@ const getUsers = async (req, res) => {
       id: user._id,
       name: user.name,
       email: user.email,
+      isadmin: user.isadmin ? "Administrador" : "Cliente"
     }));
     return res.send(allUsers);
   } catch (error) {
@@ -24,8 +25,17 @@ const createUser = async (req, res) => {
   }
   try {
     const user = new User(req.body);
-    const userSaved = await user.save();
-    return res.send(userSaved);
+    await user.save();
+    const userCreated = await User.findOne({ email });
+    return res.send({
+      id: userCreated._id,
+      name: userCreated.name,
+      email: userCreated.email,
+      isAdmin: userCreated.isadmin,
+      token: generateJWT(userCreated._id),
+    });
+
+    //return res.send(userSaved);
   } catch (error) {
     return res.status(404).send({ error: error.message });
   }

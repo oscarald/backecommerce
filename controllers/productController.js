@@ -118,11 +118,45 @@ const searchProducts = async (req, res) => {
   }
 };
 
+const allProducts = async (req, res) => {
+
+  try {
+    const products = await Product.find();
+    return res.send(products);
+  } catch (error) {
+    return res.status(404).send({ error: error.message });
+  }
+};
+
+const updateProduct = async (req, res) => {
+
+  try {
+    const{id,name,description,price,imgUrl} = req.body
+    const product = await Product.findOneAndUpdate({_id:id},{name,description,price,imgUrl}, {new: true})
+    return res.send(product);
+  } catch (error) {
+    return res.status(404).send({ error: error.message });
+  }
+};
+
+const newProduct = async (req, res) => {
+  try {
+    const{name,description,price,imgUrl} = req.body
+    const product = await Product.create({name,description,price,imgUrl,category:"63e2a57029f57e1c0bbf6d09"})
+    return res.send(product);
+  } catch (error) {
+    return res.status(404).send({ error: error.message });
+  }
+};
+
 export {
   getProducts,
   orderProducts,
   orderProductsbyPrice,
   orderProductsbyDate,
   orderProductsbyBetweenPrice,
-  searchProducts
+  searchProducts,
+  allProducts,
+  updateProduct,
+  newProduct
 };
