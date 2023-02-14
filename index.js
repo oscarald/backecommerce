@@ -1,7 +1,7 @@
 import server from "./server/server.js"
+import createCategory from "./data/categoryData.js";
 import createUser from "./data/userData.js";
 import createProducts from "./data/productData.js";
-import createCategory from "./data/categoryData.js";
 
 createCategory();
 

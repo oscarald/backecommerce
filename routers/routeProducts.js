@@ -9,7 +9,8 @@ import {
   searchProducts,
   allProducts,
   updateProduct,
-  newProduct
+  newProduct,
+  getIdProduct
 } from "../controllers/productController.js";
 
 router.get("/", getProducts);
@@ -21,5 +22,6 @@ router.get("/date", orderProductsbyDate);
 router.get("/between", orderProductsbyBetweenPrice);
 router.get("/search", searchProducts);
 router.get("/all", allProducts);
+router.get("/:id", getIdProduct);
 
 export default router;

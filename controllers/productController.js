@@ -148,6 +148,17 @@ const newProduct = async (req, res) => {
     return res.status(404).send({ error: error.message });
   }
 };
+const getIdProduct = async (req, res) => {
+  try {
+    const{id} = req.params
+    const product = await Product.findById(id).populate({
+      path: "category",
+    })
+    return res.send(product);
+  } catch (error) {
+    return res.status(404).send({ error: error.message });
+  }
+};
 
 export {
   getProducts,
@@ -158,5 +169,6 @@ export {
   searchProducts,
   allProducts,
   updateProduct,
-  newProduct
+  newProduct,
+  getIdProduct
 };

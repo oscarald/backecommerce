@@ -13,21 +13,14 @@ const souvenirs = await Category.findOne({ name: "Souvernirs" });
 const matesGranel = await Category.findOne({ name: "Mates a granel" });
 
 const products = [
-  {
-    name: "product 1",
-    description: "product 1",
-    rate: Math.floor(Math.random() * 6),
-    price: 20,
-    imgUrl: "http",
-    category: almuerzo._id,
-  },
+
   {
     name: "Diario Completo",
     description: "Diario Completo",
     rate: Math.floor(Math.random() * 6),
     price: 25,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/Diario_Completo_r2jg1r.jpg",
     category: almuerzo._id,
     //categoria: "Almuerzo",
   },
@@ -37,7 +30,7 @@ const products = [
     rate: Math.floor(Math.random() * 6),
     price: 120,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/Diario_Completo_Mensual_tqjtee.jpg",
     category: almuerzo._id,
     //categoria: "Almuerzo",
   },
@@ -47,7 +40,7 @@ const products = [
     rate: Math.floor(Math.random() * 6),
     price: 520,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/Diario_Completo_r2jg1r.jpg",
     category: almuerzo._id,
     //categoria: "Almuerzo",
   },
@@ -57,7 +50,7 @@ const products = [
     rate: Math.floor(Math.random() * 6),
     price: 10,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/cafes_nd3pjs.jpg",
     category: bebidasCalientes._id,
     //categoria: "Bebidas Calientes",
   },
@@ -67,7 +60,7 @@ const products = [
     rate: Math.floor(Math.random() * 6),
     price: 10,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/cafes_nd3pjs.jpg",
     //categoria: "Bebidas Calientes",
   },
   {
@@ -76,7 +69,7 @@ const products = [
     rate: Math.floor(Math.random() * 6),
     price: 12,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/cafes_nd3pjs.jpg",
     category: bebidasCalientes._id,
     //categoria: "Bebidas Calientes",
   },
@@ -86,7 +79,7 @@ const products = [
     rate: Math.floor(Math.random() * 6),
     price: 15,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/cafes_nd3pjs.jpg",
     category: bebidasCalientes._id,
     //categoria: "Bebidas Calientes",
   },
@@ -97,7 +90,7 @@ const products = [
     price: 15,
     category: bebidasCalientes._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/cafes_nd3pjs.jpg",
     //categoria: "Bebidas Calientes",
   },
   {
@@ -107,7 +100,7 @@ const products = [
     price: 15,
     category: bebidasCalientes._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/Caf%C3%A9_Latte_pe28du.jpg",
     //categoria: "Bebidas Calientes",
   },
   {
@@ -117,7 +110,7 @@ const products = [
     price: 220,
     category: cafeOrganico._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/Chocolate_OG_drqguw.jpg",
     //categoria: "Café Órganico",
   },
   {
@@ -127,7 +120,7 @@ const products = [
     price: 230,
     category: cafeOrganico._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/Caf%C3%A9_Latte_pe28du.jpg",
     //categoria: "Café Órganico",
   },
   {
@@ -137,7 +130,7 @@ const products = [
     price: 200,
     category: cafeOrganico._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/cafes_nd3pjs.jpg",
     //categoria: "Café Órganico",
   },
   {
@@ -147,7 +140,7 @@ const products = [
     price: 200,
     category: cafeOrganico._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/Caf%C3%A9_Latte_pe28du.jpg",
     //categoria: "Café Órganico",
   },
   {
@@ -157,7 +150,7 @@ const products = [
     price: 10,
     category: cafeOrganico._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/cafes_nd3pjs.jpg",
     //categoria: "Café Órganico",
   },
   {
@@ -167,7 +160,7 @@ const products = [
     price: 15,
     category: cafeOrganico._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/cafes_nd3pjs.jpg",
     //categoria: "Café Órganico",
   },
   {
@@ -177,7 +170,7 @@ const products = [
     price: 12,
     category: cafeOrganico._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/cafes_nd3pjs.jpg",
     //categoria: "Café Órganico",
   },
   {
@@ -187,7 +180,7 @@ const products = [
     price: 18,
     category: cafeOrganico._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/Cereal_de_Spirulina_gjxi2l.jpg",
     //categoria: "Café Órganico",
   },
   {
@@ -197,7 +190,7 @@ const products = [
     price: 15,
     category: cafeOrganico._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/Cocozhi_topklc.jpg",
     //categoria: "Café Órganico",
   },
   {
@@ -207,7 +200,7 @@ const products = [
     price: 6,
     category: embotellados._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342115/siipi/Agua_Alcalina_duoh5i.jpg",
     //categoria: "Embotellados",
   },
   {
@@ -217,7 +210,7 @@ const products = [
     price: 38,
     category: embotellados._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342115/siipi/Aloevera_llwzbh.jpg",
     //categoria: "Embotellados",
   },
   {
@@ -227,7 +220,7 @@ const products = [
     price: 40,
     category: embotellados._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342115/siipi/Aloe_con_col%C3%A1geno_lf3da9.jpg",
     //categoria: "Embotellados",
   },
   {
@@ -237,7 +230,7 @@ const products = [
     price: 40,
     category: embotellados._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342115/siipi/Aloe_pro_Defensas_rgkvvc.jpg",
     //categoria: "Embotellados",
   },
   {
@@ -247,7 +240,7 @@ const products = [
     price: 40,
     category: embotellados._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342115/siipi/Aloe_con_noni_m1caiq.jpg",
     //categoria: "Embotellados",
   },
   {
@@ -257,7 +250,7 @@ const products = [
     price: 45,
     category: embotellados._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342117/siipi/Noni_nht8zf.jpg",
     //categoria: "Embotellados",
   },
   {
@@ -267,7 +260,7 @@ const products = [
     price: 25,
     category: embotellados._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342117/siipi/Stevia_jhkgqs.jpg",
     //categoria: "Embotellados",
   },
   {
@@ -277,7 +270,7 @@ const products = [
     price: 15,
     category: embotellados._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342117/siipi/Mermelada_n4ujir.jpg",
     //categoria: "Embotellados",
   },
   {
@@ -317,7 +310,7 @@ const products = [
     price: 6,
     category: masitas._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342117/siipi/Empanadas_integrales_fso8xw.jpg",
     //categoria: "Masitas",
   },
   {
@@ -327,7 +320,7 @@ const products = [
     price: 6,
     category: masitas._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342117/siipi/Queques_saludables_gebmmc.jpg",
     //categoria: "Masitas",
   },
   {
@@ -337,7 +330,7 @@ const products = [
     price: 8,
     category: masitas._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342117/siipi/Pastel_de_choclo_aavxho.jpg",
     //categoria: "Masitas",
   },
   {
@@ -347,7 +340,7 @@ const products = [
     price: 10,
     category: masitas._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/Cu%C3%B1ape_vqu2ms.jpg",
     //categoria: "Masitas",
   },
   {
@@ -357,7 +350,7 @@ const products = [
     price: 25,
     category: masitas._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342115/siipi/Bandeja_de_choclitos_bdfe6s.jpg",
     //categoria: "Masitas",
   },
   {
@@ -407,7 +400,7 @@ const products = [
     price: 16,
     category: matesEmbolsados._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342118/siipi/Te_verde_hpdc0o.jpg",
     //categoria: "Mates Embolsados",
   },
   {
@@ -417,7 +410,7 @@ const products = [
     price: 8,
     category: matesEmbolsados._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342117/siipi/Moringa_bszjab.jpg",
     //categoria: "Mates Embolsados",
   },
   {
@@ -427,7 +420,7 @@ const products = [
     price: 10,
     category: matesEmbolsados._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/Cedron_uzgdgw.jpg",
     //categoria: "Mates Embolsados",
   },
   {
@@ -437,7 +430,7 @@ const products = [
     price: 20,
     category: matesEmbolsados._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342117/siipi/Flor_de_jamaica_ammxmj.jpg",
     //categoria: "Mates Embolsados",
   },
   {
@@ -447,7 +440,7 @@ const products = [
     price: 25,
     category: souvenirs._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/cofre_10_pexral.jpg",
     //categoria: "Souvenirs",
   },
   {
@@ -457,7 +450,7 @@ const products = [
     price: 5,
     category: souvenirs._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342117/siipi/papel_de_regalo_vbilng.jpg",
     //categoria: "Souvenirs",
   },
   {
@@ -467,7 +460,7 @@ const products = [
     price: 20,
     category: souvenirs._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342117/siipi/taza_brillosa_cxidgl.jpg",
     //categoria: "Souvenirs",
   },
   {
@@ -477,7 +470,7 @@ const products = [
     price: 40,
     category: souvenirs._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342118/siipi/taza_porcelana_zjai2f.jpg",
     //categoria: "Souvenirs",
   },
   {
@@ -487,7 +480,7 @@ const products = [
     price: 55,
     category: souvenirs._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342118/siipi/taza_metalica_ztqoti.jpg",
     //categoria: "Souvenirs",
   },
   {
@@ -497,7 +490,7 @@ const products = [
     price: 55,
     category: souvenirs._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342118/siipi/tomatodo_vuzsmm.jpg",
     //categoria: "Souvenirs",
   },
   {
@@ -507,7 +500,7 @@ const products = [
     price: 20,
     category: souvenirs._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/Bolsa_ecologica_mpidfz.jpg",
     //categoria: "Souvenirs",
   },
   {
@@ -517,17 +510,17 @@ const products = [
     price: 20,
     category: souvenirs._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342117/siipi/Matera_egljvu.jpg",
     //categoria: "Souvenirs",
   },
   {
-    name: "Insumo de Miel",
-    description: "Insumo de Miel",
+    name: "Miel orgánica",
+    description: "Miel orgánica",
     rate: Math.floor(Math.random() * 6),
     price: 45,
     category: miel._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342117/siipi/miel_organica_kkjhnk.jpg",
     //categoria: "Miel",
   },
   {
@@ -537,7 +530,7 @@ const products = [
     price: 38,
     category: miel._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342117/siipi/Propoleo_kodlwk.jpg",
     //categoria: "Miel",
   },
   {
@@ -547,7 +540,7 @@ const products = [
     price: 12,
     category: miel._id,
     imgUrl:
-      "https://res.cloudinary.com/de8brtp2o/image/upload/v1674530012/siipi/frapusii_l8m5ax.jpg",
+      "https://res.cloudinary.com/de8brtp2o/image/upload/v1676342116/siipi/Caramelo_de_miel_jfq4uy.jpg",
     //categoria: "Miel",
   },
 ];
